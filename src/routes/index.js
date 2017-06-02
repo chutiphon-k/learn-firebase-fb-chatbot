@@ -1,11 +1,9 @@
 import { Router } from 'express'
 
-import web from 'routes/web'
-import api from 'routes/api'
+import example from 'routes/example'
 
 const router = Router()
 
-router.use('/api', api)
-router.use('/', web)
+router.use('/', example)
 
 export default router
